@@ -9,8 +9,8 @@ print(fibRange[:-1])
 evens=sum(i for i in fibRange[:-1] if i%2==0)
 print(evens)
 
-# 2nd approach for Fibonacci list
 
+# 2nd approach for Fibonacci list
 res = [1,2]
 a=1
 b=2
@@ -18,3 +18,14 @@ while b <100:
     a, b = b, a+b
     res.append(b)
 res
+
+
+#3rd approach
+a, b = 1, 2
+s = 0
+while b < 4000000:
+    if b%2==0:
+        s += b
+    a, b = b, a+b
+
+print(s)
